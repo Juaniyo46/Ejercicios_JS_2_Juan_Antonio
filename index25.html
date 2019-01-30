@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 25</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var juego = prompt("Jugemos, ¿Piedra, papel o tijera?");
+		var juegoMin = juego.toLowerCase();
+		var jugadaMaq = "";
+
+			var aleatorio = Math.floor(Math.random( )* 4)
+			if (aleatorio <= 1) {jugadaMaq = "piedra"}
+			else if (aleatorio > 1 && aleatorio <= 2) {jugadaMaq = "papel"}
+			else jugadaMaq = "tijera";
+
+			if (jugadaMaq == "piedra" && juegoMin == "piedra") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Empate!")}
+			else if (jugadaMaq == "piedra" && juegoMin == "papel") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Has Ganado!")}
+			else if (jugadaMaq == "piedra" && juegoMin == "tijera") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Has Perdido!")}
+			else if (jugadaMaq == "papel" && juegoMin == "piedra") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Has Perdido!")}
+			else if (jugadaMaq == "papel" && juegoMin == "papel") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Empate!")}
+			else if (jugadaMaq == "papel" && juegoMin == "tijera") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Has Ganado!")}
+			else if (jugadaMaq == "tijera" && juegoMin == "piedra") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Has Ganado!")}
+			else if (jugadaMaq == "tijera" && juegoMin == "papel") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Has Perdido!")}
+			else if (jugadaMaq == "tijera" && juegoMin == "tijera") {document.write(jugadaMaq + " - " + juegoMin + " = " + "Empate!")}
+
+
+	</script>
+</body>
+</html>

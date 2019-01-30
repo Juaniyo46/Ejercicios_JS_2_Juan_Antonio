@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 2</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nota = parseInt(prompt("Introduzca la nota"));
+
+		if (isNaN(nota) == false) {
+			if (nota < 3) {document.write("Muy deficiente")}
+			else if (nota >=3 && nota < 5) {document.write("Insuficiente")}
+			else if (nota >= 5 && nota < 6) {document.write("Suficiente")}
+			else if (nota >=6 && nota < 7) {document.write("Bien")}
+			else if (nota >= 7 && nota < 9) {document.write("Notable")}
+			else if (nota >= 9 && nota <= 10) {document.write("Sobresaliente")}
+			else document.write("El número no está entre 0 y 10")
+		} else {
+			document.write("El número introducido no es válido")
+		}
+	</script>
+</body>
+</html>

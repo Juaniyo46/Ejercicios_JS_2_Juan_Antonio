@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 27</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		function letra(dni) {
+			var cadena = "TRWAGMYFPDXBNJZSQVHLCKE";
+			if (dni >= 0 && dni <= 99999999 && dni.length == 8) {
+			var posicion = dni % 23;
+			var letradni = cadena.substring(posicion,posicion+1);
+			} return letradni;
+		}
+
+		var dni = prompt("Indroduzca su número de DNI");
+		var letradni = letra(dni);
+
+		
+
+		if (letradni) {document.write("La letra de tu DNI es: " + letradni)}
+		else {document.write("El dato introducido no es válido");}
+
+		
+	</script>
+</body>
+</html>

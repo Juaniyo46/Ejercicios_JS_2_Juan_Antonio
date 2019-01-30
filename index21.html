@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 21</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var texto = prompt("Introduzca un texto palíndromo");
+		var i;
+		var textosin = "";
+		var textorev = "";
+		var caracteres;
+		var longitud = texto.length;
+		texto = texto.toLowerCase();
+
+		for (i = 0; i < longitud; i++) {
+			caracteres = texto.charAt(i);
+
+			if (caracteres != " ") {
+				textosin = textosin + caracteres;
+				textorev = textorev + caracteres;
+			}
+		}
+		if (textorev == textosin) {
+			document.write("El texto es palíndromo")
+		} else {
+			document.write("El texto no es palíndromo")
+		}
+
+
+	</script>
+</body>
+</html>

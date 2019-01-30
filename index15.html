@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 15</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var i;
+		var max = 100;
+		var min = 0;
+		for (i = 1 ; i <= 14; i++) {
+			var numero = Math.floor(Math.random() * (max - min) + min);
+			if (numero <= 60) { 
+
+				numero = 1;	
+			}
+			if (numero > 60 && numero < 90) {
+				numero = "x";
+			}
+			if (numero >= 90) {
+				numero = 2;
+			}
+
+			document.write("Resultado " + i + ": " + numero + "<br>");
+		}
+	</script>
+</body>
+</html>

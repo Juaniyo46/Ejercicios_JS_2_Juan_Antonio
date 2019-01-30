@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 4</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+		var resultado = 0;
+
+		do{
+		 	var numero = prompt("Introduzca un número");
+			
+			if (numero != null) {
+				if (Number(numero) == parseInt(numero)) {
+					resultado = resultado + parseInt(numero);
+				} else {
+					alert("El valor introducido no es válido");
+				}
+			}
+			
+			} while (numero != null);
+
+
+			document.write(resultado);
+			
+			
+		
+	</script>
+</body>
+</html>

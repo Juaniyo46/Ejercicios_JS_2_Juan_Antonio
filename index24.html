@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 24</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numeros = parseInt(prompt("Introduca un numero mayor de 1 y menor de 101"));
+		var numero1 = 0;
+		var numero2 = 1;
+		var i;
+		var suma;
+
+		if (numeros > 0 && numeros < 101) {
+
+				for (i = 0; i <= numeros; i++) {
+				suma = numero1 + numero2;
+				numero1 = numero2;
+				numero2 = suma;
+				document.write(suma);
+			}
+			
+		} else {
+			document.write("El valor introducido no es valido");
+		}
+	</script>
+</body>
+</html>

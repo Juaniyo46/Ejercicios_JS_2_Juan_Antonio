@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 5</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var dni = prompt("Indroduzca su número de DNI");
+
+		if (dni >= 0 && dni <= 99999999 && dni.length == 8) {
+			cadena = "TRWAGMYFPDXBNJZSQVHLCKE";
+			posicion = dni % 23;
+			letra = cadena.substring(posicion,posicion+1);
+			document.write("La letra de tu DNI es: -" + letra);
+		} else document.write("El DNI introducido no es válido")
+	</script>
+</body>
+</html>

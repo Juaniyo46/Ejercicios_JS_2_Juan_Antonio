@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 23</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var texto = prompt("Introduzca un texto");
+		var vocales = ["a","e","i","o","u"];
+		var i;
+		var posicion = 0;
+		var textoMin = texto.toLowerCase();
+
+		for (i = 0; i < textoMin.length; i++) {
+			if (vocales.includes(textoMin.charAt(i))) {
+			posicion = i;
+			break;
+			}
+		}
+
+		document.write("La posición es: " + posicion);
+	</script>
+</body>
+</html>

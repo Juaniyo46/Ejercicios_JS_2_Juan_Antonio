@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 22</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var texto = prompt("Introduzca un texto");
+		var i;
+		var j;
+		var vocales = ["a","e","i","o","u"];
+		var posicion = 0;
+		var textoMin = texto.toLowerCase();
+		var parar = false;
+
+		for (i = 0; i < textoMin.length; i++) {
+			for (j = 0; j < vocales.length; j++) {
+				if (textoMin.charAt(i) == vocales[j]) {
+					posicion = i;
+					parar = true
+					break;
+				}
+			}
+			if (parar) {
+				break;
+			}
+		}
+		document.write("La posición es: " + posicion);
+
+
+
+	</script>
+</body>
+</html>

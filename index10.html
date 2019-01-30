@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 10</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var filas = parseInt(prompt("Número de filas"));
+		var columnas = parseInt(prompt("Número de columnas"));
+		var i;
+		var j;
+		var resultado = filas * columnas;
+
+		document.write("<table border>");
+
+		for (i = 0; i < filas; i++) {
+			document.write("<tr>");
+
+			for(j = 0; j < columnas; j++) {
+				document.write("<td>");
+
+				document.write(resultado);
+				resultado--;
+
+				document.write("</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table>");
+
+	</script>
+</body>
+</html>

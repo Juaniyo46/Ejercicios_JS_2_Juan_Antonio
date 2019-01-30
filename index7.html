@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 7</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numero = prompt("Indroduzca un número entre 1 y 80")
+		var repeticion;
+		var i;
+
+		if (isNaN(numero) == false) {
+			if (numero > 0 && numero <= 80) {
+				for (i = numero; i >= 1; i--){
+					for (repeticion = i ; repeticion >= 1; repeticion--) {
+						document.write(i);
+					}
+					document.write("<br>");
+				}
+
+			} else {
+				document.write("Número no vallido");
+			}
+		} else {
+			document.write("Valor introducido no válido");
+		}
+	</script>
+</body>
+</html>

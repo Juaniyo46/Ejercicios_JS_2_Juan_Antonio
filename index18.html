@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 18</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var texto = prompt("Introduzca un texto");
+		cadena = "a,e,i,o,u";
+		var i;
+		var vocales = 0;
+		var j;
+
+		for (i = 0; i < texto.length; i++) {
+			for (j = 0; j <= cadena.length; j++) {
+				if (texto[i] == cadena[j]) {
+					vocales++
+				}
+			}
+			
+			
+		}
+		document.write(vocales);
+	</script>
+</body>
+</html>

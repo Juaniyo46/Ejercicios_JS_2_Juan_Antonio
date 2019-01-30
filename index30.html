@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 30</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function numAleatorio(min,max) {
+			if (min == undefined || isNaN(min)) {min = 1}
+			if (max == undefined || isNaN(max)) {max = 100}
+
+			var numero = Math.random() * (max - min) + min;
+
+			return numero;
+		}
+
+		var min = parseInt(prompt("Introduzca un valor mínimo"));
+		var max = parseInt(prompt("Introduzca un valor máximo"));
+
+		document.write(numAleatorio(min,max));
+	</script>
+</body>
+</html>

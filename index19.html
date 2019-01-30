@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 19</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var texto = prompt("Escriba un texto con parentesis"); 
+		var i;
+		var textoM = "";
+		var caracteres;
+		var copia = false;
+
+		for(i = 0; i < texto.length; i++) {
+			caracteres = texto.charAt(i);
+			if (caracteres == ")") {
+				copia = false;
+			}
+			if (caracteres == "(") {
+				copia = true;
+			}
+			if (copia) {
+				textoM = textoM + caracteres;
+			}
+
+		}
+		document.write(textoM);
+	</script>
+</body>
+</html>

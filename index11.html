@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 11</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var nombre1 = prompt("Primer nombre");
+		var edad1 = parseInt(prompt("Primera edad"));
+
+		var nombre2 = prompt("Segundo nombre");
+		var edad2 = parseInt(prompt("Segunda edad"));
+
+		var nombre3 = prompt("Tercer nombre");
+		var edad3 = parseInt(prompt("Tercera edad"));
+
+		if (isNaN(edad1,edad2,edad3)== false) {
+			var mayor = Math.max(edad1,edad2,edad3);
+			if (mayor == edad1) {document.write(nombre1 + " ")};
+			if (mayor == edad2) {document.write(nombre2 + " ")};
+			if (mayor == edad3) {document.write(nombre3 + " ")};
+			if (edad1 == edad2 && edad2 == edad3) {document.write("Tienen la misma edad")};
+		} else {
+			document.write("La edad introducida no es correcta");
+		}
+	</script>
+</body>
+</html>

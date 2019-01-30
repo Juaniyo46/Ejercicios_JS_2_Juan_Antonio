@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 28</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function precioTotal(precio, iva) {
+			
+			if (iva < 1 || isNaN(iva)) {iva = 21;} 
+			var calcIva = (precio * iva) / 100;
+			var total = precio + calcIva;
+			return total;
+		}
+
+		var precio = parseFloat(prompt("Introduzca el precio"));
+		var iva = parseInt(prompt("Introduzca iva o dejeló a 0"));
+
+		if (isNaN(precioTotal(precio,iva))) {document.write("Los datos introducidos son erroneos")}
+		else document.write("El precio total es: " + precioTotal(precio,iva));
+
+	</script>
+</body>
+</html>

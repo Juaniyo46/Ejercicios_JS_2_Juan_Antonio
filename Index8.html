@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ejercicio 8</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var numero = prompt("Indroduzca un número entre 1 y 50");
+		var repeticion;
+		var i;
+
+		if (isNaN(numero) == false) {
+			if (numero > 0 && numero <= 50) {
+				for (i = 1; i <= numero; i++) {
+					for (repeticion = 1; repeticion <= i; repeticion++) {
+						document.write(repeticion);
+					}
+					document.write("<br>");
+				}
+			} else {
+				document.write("El número introducido se sale del rango");
+			}
+		} else {
+			document.write("El valor introducido no es un número");
+		}
+	</script>
+</body>
+</html>
